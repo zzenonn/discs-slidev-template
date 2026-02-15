@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Condensed:wght@300;400;700&family=Fira+Code:wght@400;500&display=swap');
+
+:root {
+  --slidev-theme-primary: #00b0f0;
+  --slidev-theme-background: #ffffff;
+}
+
+html {
+  background: #ffffff;
+}
+
+body {
+  background: #ffffff;
+  color: #404040;
+}
+
+.slidev-layout {
+  font-family: 'Roboto Condensed', sans-serif;
+  background: #ffffff !important;
+  color: #404040 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  background: #00b0f0;
+  color: #ffffff !important;
+  padding: 1rem 3rem;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+h2 {
+  font-size: 2.25rem;
+  background: #00b0f0;
+  color: #ffffff !important;
+  padding: 0.75rem 3rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: #00b0f0 !important;
+  background: transparent;
+  padding: 0;
+}
+
+h4, h5, h6 {
+  color: #404040 !important;
+  background: transparent;
+  padding: 0;
+}
+
+p {
+  color: #404040 !important;
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+ul, ol {
+  color: #404040 !important;
+  margin: 1rem 0;
+  padding-left: 2rem;
+  list-style-position: outside;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li {
+  color: #404040 !important;
+  margin: 0.5rem 0;
+  line-height: 1.6;
+  display: list-item;
+}
+
+li::marker {
+  color: #404040;
+}
+
+code {
+  font-family: 'Fira Code', monospace;
+  background: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  color: #404040 !important;
+}
+
+pre {
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+}
+
+a {
+  color: #00b0f0 !important;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong, b {
+  font-weight: 700;
+  color: #404040 !important;
+}
+
+em, i {
+  font-style: italic;
+  color: #404040 !important;
+}
