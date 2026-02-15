@@ -2,7 +2,9 @@
   <div class="slidev-layout cover">
     <div class="cover-content">
       <h1 v-if="$slidev.configs.title">{{ $slidev.configs.title }}</h1>
-      <p v-if="$slidev.configs.info" class="subtitle">{{ $slidev.configs.info }}</p>
+      <div class="subtitle-content">
+        <slot />
+      </div>
       <div class="author-info">
         <p v-if="$slidev.configs.author" class="author">{{ $slidev.configs.author }}</p>
         <p v-if="$slidev.configs.date" class="date">{{ $slidev.configs.date }}</p>
@@ -50,10 +52,18 @@
   text-align: center;
 }
 
-.subtitle {
+.subtitle-content {
   font-size: 1.5rem;
   color: #404040 !important;
   margin-bottom: 2rem;
+  margin-top: 0;
+  padding: 0;
+}
+
+.subtitle-content :deep(p) {
+  color: #404040 !important;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
 }
 
 .author-info {
