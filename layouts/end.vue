@@ -1,12 +1,7 @@
 <template>
   <div class="slidev-layout end">
     <div class="end-content">
-      <h1>Thank You</h1>
       <slot />
-    </div>
-    <div class="branding">
-      <div class="discs-logo">DISCS</div>
-      <p class="institution">Ateneo de Manila University</p>
     </div>
   </div>
 </template>
@@ -19,9 +14,11 @@
   align-items: center;
   text-align: center;
   padding: 3rem;
-  background: #ffffff;
+  background: #ffffff !important;
   position: relative;
   color: #404040;
+  height: 100%;
+  width: 100%;
 }
 
 .end * {
@@ -40,7 +37,7 @@
   color: #404040 !important;
 }
 
-.end h1 {
+.end-content :deep(h1) {
   font-size: 4rem;
   background: #00b0f0;
   color: #ffffff !important;
@@ -52,21 +49,21 @@
   text-align: center;
 }
 
-.branding {
-  margin-top: auto;
-  padding-top: 2rem;
-}
-
-.discs-logo {
-  font-family: 'Roboto', sans-serif;
+.end-content :deep(h2) {
   font-size: 2.5rem;
-  font-weight: 700;
-  color: #00b0f0 !important;
-  margin-bottom: 0.5rem;
+  background: #00b0f0;
+  color: #ffffff !important;
+  padding: 0.75rem 0;
+  margin-bottom: 1.5rem;
+  margin-left: -3rem;
+  margin-right: -3rem;
+  box-sizing: border-box;
+  text-align: center;
 }
 
-.institution {
-  font-size: 1rem;
+.end-content :deep(p) {
+  font-size: 1.25rem;
   color: #404040 !important;
+  margin: 0.5rem 0;
 }
 </style>

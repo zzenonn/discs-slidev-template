@@ -55,18 +55,14 @@ const greet = () => {
 Key features:
 
 1. Minimalist design
-2. Professional typography
-3. DISCS branding
-4. Multiple layouts
+2. DISCS branding
+3. Multiple layouts
 
 - Roboto for titles
 - Roboto Condensed for body
-- Blue accent color
 
 ---
 layout: end
 ---
 
-# Questions?
-
-Contact: discs@ateneo.edu
+# Thank You

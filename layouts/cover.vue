@@ -23,9 +23,11 @@
   align-items: center;
   text-align: center;
   padding: 2rem;
-  background: #ffffff;
+  background: #ffffff !important;
   position: relative;
   color: #404040;
+  height: 100%;
+  width: 100%;
 }
 
 .cover-content {

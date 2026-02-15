@@ -15,18 +15,20 @@
 
 <style scoped>
 .default {
-  padding: 2rem 3rem;
+  padding: 2rem 3rem 5rem 3rem;
   display: flex;
   flex-direction: column;
   height: 100%;
-  background: #ffffff;
+  background: #ffffff !important;
   position: relative;
   color: #404040;
+  width: 100%;
 }
 
 .content {
   flex: 1;
   color: #404040;
+  overflow: hidden;
 }
 
 .content :deep(*) {
@@ -35,9 +37,24 @@
 
 .content :deep(h1),
 .content :deep(h2) {
-  margin-left: -3rem;
-  margin-right: -3rem;
-  color: #ffffff;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  color: #404040 !important;
+  background: transparent !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+.content :deep(h1) {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.content :deep(h2) {
+  font-size: 2.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 .content :deep(h3) {
@@ -70,14 +87,18 @@
 }
 
 .footer {
+  position: absolute;
+  bottom: 1rem;
+  left: 3rem;
+  right: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 1rem;
-  margin-top: auto;
   border-top: 2px solid var(--discs-blue);
   font-size: 0.9rem;
   color: #404040;
+  background: #ffffff;
 }
 
 .footer-left {
