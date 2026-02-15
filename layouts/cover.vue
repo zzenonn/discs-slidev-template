@@ -6,13 +6,17 @@
         <slot />
       </div>
       <div class="author-info">
-        <p v-if="$slidev.configs.author" class="author">{{ $slidev.configs.author }}</p>
-        <p v-if="$slidev.configs.date" class="date">{{ $slidev.configs.date }}</p>
+        <slot name="author-info">
+          <p v-if="$slidev.configs.author" class="author">{{ $slidev.configs.author }}</p>
+          <p v-if="$slidev.configs.date" class="date">{{ $slidev.configs.date }}</p>
+        </slot>
       </div>
     </div>
     <div class="branding">
-      <div class="discs-logo">DISCS</div>
-      <p class="institution">Ateneo de Manila University</p>
+      <slot name="subject-info">
+        <div class="discs-logo">DISCS</div>
+        <p class="institution">Ateneo de Manila University</p>
+      </slot>
     </div>
   </div>
 </template>
@@ -70,12 +74,16 @@
   margin-top: 2rem;
 }
 
+.author-info :deep(p:first-child),
+.author-info :deep(p:first-of-type),
 .author-info .author {
   margin: 0.5rem 0;
   font-size: 1.1rem;
   color: #404040 !important;
 }
 
+.author-info :deep(p:last-child),
+.author-info :deep(p:last-of-type),
 .author-info .date {
   color: #666 !important;
   font-size: 1rem;
@@ -84,17 +92,22 @@
 
 .branding {
   margin-top: auto;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
+.branding :deep(p:first-child),
+.branding :deep(p:first-of-type),
 .discs-logo {
   font-family: 'Roboto', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   color: #00b0f0 !important;
   margin-bottom: 0.5rem;
+  margin-top: 0;
 }
 
+.branding :deep(p:last-child),
+.branding :deep(p:last-of-type),
 .institution {
   font-size: 1rem;
   color: #404040 !important;

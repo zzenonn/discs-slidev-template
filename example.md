@@ -1,13 +1,20 @@
 ---
 theme: ./
 title: DISCS Theme Demo
-author: Your Name
-date: 2026-02-15
 highlighter: shiki
 layout: cover
 ---
 
 A minimalist Slidev theme for Ateneo DISCS
+
+::author-info::
+Your Name
+
+February 15, 2026
+
+::subject-info::
+CSCI 61
+Information Assurance and Security
 
 ---
 layout: section
