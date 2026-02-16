@@ -11,6 +11,14 @@
   ],
   "author": "Ateneo DISCS",
   "license": "MIT",
+  "files": [
+    "layouts",
+    "setup",
+    "public",
+    "style.css",
+    "package.json",
+    "README.md"
+  ],
   "slidev": {
     "colorSchema": "both",
     "defaults": {

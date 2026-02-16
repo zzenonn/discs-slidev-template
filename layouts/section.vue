@@ -19,6 +19,10 @@
   width: 100%;
 }
 
+.section-content {
+  width: 100%;
+}
+
 .section :deep(h1) {
   font-size: 4rem;
   background: #00b0f0;

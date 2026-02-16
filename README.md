@@ -93,7 +93,9 @@ layout: end
 
 All layouts use a white background. Titles on cover, section, and end layouts have blue boxes, while default layout titles are simple text.
 
-The footer logo can be customized by replacing `public/discs-logo.png`.
+### Adding a Logo
+
+To add a logo to the footer, place your logo file as `public/discs-logo.png` in your presentation project, then customize the default layout by creating a local override.
 
 ## License
 
